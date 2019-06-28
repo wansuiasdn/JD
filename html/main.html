@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>京东主页</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		*{margin: 0;padding: 0;}
+		a{text-decoration: none;}
+		ul,ol{list-style: none}
+	</style>
+	<script src="../js/jquery-2.2.3.min.js"></script>
+	<script src="../js/jquery.cookie.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+	<link rel="stylesheet" type="text/css" href="../font/iconfont.css">
+	<link rel="stylesheet" href="../swiper-4.5.0/dist/css/swiper.min.css">
+</head>
+<body>
+	<div class="topsearch">
+		<div class="tpbox">
+			<div class="tplogo">
+				<a href="main.html"></a>
+			</div>
+			<div class="sec">
+					<input type="text" name="" placeholder="花露水">
+					<i class="iconfont icon-zhaoxiangji"></i>
+					<div class="secbtn">
+						<i class="iconfont icon-sousuo"></i>
+					</div>
+			</div>
+		</div>
+	</div>
+	<!-- 右边侧导航 -->
+	<div class="toolbarbox">
+		<div class="toolin">
+			<div class="toolbar">
+				<div>
+					<i></i>
+					<em class="tab-text">京东会员</em>
+				</div>
+				<div>
+					<i></i>
+					<em class="tab-text">购物车</em>
+				</div>
+				<div>
+					<i></i>
+					<em class="tab-text">我的关注</em>
+				</div>
+				<div>
+					<i></i>
+					<em class="tab-text">我的足迹</em>
+				</div>
+				<div>
+					<i></i>
+					<em class="tab-text">我的消息</em>
+				</div>
+				<div>
+					<i></i>
+					<em class="tab-text">咨询JIMI</em>
+				</div>
+				<div>
+					<i></i>
+					<em class="tab-text">反馈</em>
+				</div>
+			</div>
+			<div class="toolbarfooter">
+				<div>
+					<i></i>
+					<em class="tab-text">顶部</em>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="headerbox">
+		<header class="header">
+			<ul class="ull">
+				<li><i class="iconfont icon-shouhuodizhi"></i><span>北京</span></li>
+			</ul>
+			<ul class="ulr">
+				<li></li>
+				<li>|</li>
+				<li onclick="zhuce()">免费注册</li>
+				<li>|</li>
+				<li>我的订单</li>
+				<li>|</li>
+				<li>我的京东<i class="iconfont icon-xiangxiajiantou"></i></li>
+				<li>|</li>
+				<li>京东会员</li>
+				<li>|</li>
+				<li>企业采购<i class="iconfont icon-xiangxiajiantou"></i></li>
+				<li>|</li>
+				<li>客户服务<i class="iconfont icon-xiangxiajiantou"></i></li>
+				<li>|</li>
+				<li>网站导航<i class="iconfont icon-xiangxiajiantou"></i></li>
+				<li>|</li>
+				<li class="asd">
+					<span>手机京东</span>
+					<div class="mobile_static">
+						<div class="mobileimg"></div>
+					</div>
+				</li>
+			</ul>
+		</header>
+	</div>
+	<div class="selectbox">
+		<div class="select">
+			<div class="logo"></div>
+			<div class="secbox">
+				<div class="sec">
+					<input type="text" name="" placeholder="花露水">
+					<i class="iconfont icon-zhaoxiangji"></i>
+					<div class="secbtn">
+						<i class="iconfont icon-sousuo"></i>
+					</div>
+				</div>
+			</div>
+			<div class="dropdown" onclick="gwc()">
+				<div class="cw-icon">
+					<i class="iconfont icon-gouwuche"></i>
+					<i class="num"></i>
+					<span>我的购物车</span>
+				</div>
+			</div>
+			<div class="hotwords">
+				<span>家电精选榜</span>
+				<span>冰淇淋</span>
+				<span>空调钜惠</span>
+				<span>电脑数码</span>
+				<span>199减100</span>
+				<span>京东房产</span>
+				<span>夏季养殖</span>
+				<span>血压理疗</span>
+				<span>品质家具</span>
+			</div>
+			<div class="navitems">
+				<ul>
+					<li>秒杀</li>
+					<li>优惠券</li>
+					<li>PLUS会员</li>
+					<li>闪购</li>
+					<li>拍卖</li>
+					<li>京东时尚</li>
+					<li>京东超市</li>
+					<li>京东生鲜</li>
+					<li>海囤全球</li>
+					<li>京东金融</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="mainbox">
+		<main class="main">
+			<div class="fs1">
+				<ul></ul>
+				<div class="popCtn">
+					<div class="cate">
+						<div class="catein">
+							
+						</div>
+						<div class="detail">
+							
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="fs2">
+				<div class="swiper-container">
+				    <div class="swiper-wrapper">
+				      <div class="swiper-slide"></div>
+				      <div class="swiper-slide"></div>
+				      <div class="swiper-slide"></div>
+				      <div class="swiper-slide"></div>
+				      <div class="swiper-slide"></div>
+				      <div class="swiper-slide"></div>
+				      <div class="swiper-slide"></div>
+				      <div class="swiper-slide"></div>
+				    </div>
+				    <!-- Add Pagination -->
+				    <div class="swiper-pagination"></div>
+				    <!-- Add Navigation -->
+				    <div class="swiper-button-prev" style="width: 24px;height: 40px;line-height: 40px;text-align: center;color: rgba(255, 255, 255, 0.4);background: rgba(0, 0, 0, 0.2)">
+				    	<i class="iconfont icon-xiangzuojiantou"></i>
+				    </div>
+				    <div class="swiper-button-next" style="width: 24px;height: 40px;line-height: 40px;text-align: center;color: rgba(255, 255, 255, 0.4);background: rgba(0, 0, 0, 0.2)">
+				    	<i class="iconfont icon-xiangyoujiantou"></i>
+				    </div>
+				  </div>
+			</div>
+			<div class="fs3">
+					<p></p>
+					<p></p>
+					<p></p>
+			</div>
+			<div class="fs4">
+				<div class="box1">
+					<div class="box1in">
+						<div>
+							<p>
+								<img src="../images/no_login.jpg">
+							</p>
+						</div>
+						<div class="usershow">
+							<p>Hi,</p>
+							<a href="login.html">登录</a>
+							<a href="register.html">注册</a>
+						</div>
+						<div class="profit">
+							<span>新人福利</span>
+							<span>PLUS会员</span>
+						</div>
+					</div>
+				</div>
+				<div class="box2">
+					<div class="box2in">
+						<div class="newtop">
+							<h5>京东快报</h5>
+							<span>更多<i class="iconfont icon-xiangyoujiantou"></i></span>
+						</div>
+						<ul class="newlist">
+							<li><span>热门</span>科技延续：亚瑟士GEL-KAYANO 26全新发售</li>
+							<li><span>推荐</span>三个一辈子都实用的钓法，闷热天气上鱼多</li>
+							<li><span>热议</span>担心穿不好Polo衫，这几个要点让你避免踩雷</li>
+							<li><span>热议</span>正确安装行车记录仪的方法，位置十分重要！</li>
+						</ul>
+					</div>
+				</div>
+				<div class="box3">
+					<div class="entry">
+						<ul>
+							<li><i class="iconfont icon-wodehongbao "></i><span>红包</span></li>
+							<li><i class="iconfont icon-suo "></i><span>锁</span></li>
+							<li><i class="iconfont icon-wodedingdan "></i><span>订单</span></li>
+							<li><i class="iconfont icon-shengyin "></i><span>声音</span></li>
+							<li><i class="iconfont icon-yanjing  "></i><span>眼睛 </span></li>
+							<li><i class="iconfont icon-wodehongbao "></i><span>红包</span></li>
+							<li><i class="iconfont icon-suo "></i><span>锁</span></li>
+							<li><i class="iconfont icon-wodedingdan "></i><span>订单</span></li>
+							<li><i class="iconfont icon-shengyin "></i><span>声音</span></li>
+							<li><i class="iconfont icon-yanjing  "></i><span>眼睛 </span></li>
+							<li><i class="iconfont icon-shengyin "></i><span>声音</span></li>
+							<li><i class="iconfont icon-yanjing  "></i><span>眼睛 </span></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</main>
+		<div class="floor"></div>
+	</div>
+	<div class="morebox">
+		<div class="floorhd">
+			<div>
+				<h3>还没逛够</h3>
+			</div>
+		</div>
+		<div class="more2">
+			<ul>
+				
+			</ul>
+		</div>
+	</div>
+	<footer>
+		<div class="service">
+			<div>
+				<ul>
+					<li><div><h5>多</h5><p>品类齐全，轻松购物</p></div></li>
+					<li><div><h5>快</h5><p>多仓直发，极速配送</p></div></li>
+					<li><div><h5>好</h5><p>正品行货，精致服务</p></div></li>
+					<li><div><h5>省</h5><p>天天低价，畅选无忧</p></div></li>
+				</ul>
+			</div>
+		</div>
+		<div class="help">
+			<div>
+				<div class="nav">
+					<h5>购物指南</h5>
+					<ul>
+						<li>购物流程</li>
+						<li>会员介绍</li>
+						<li>生活旅行</li>
+						<li>常见问题</li>
+						<li>大家电</li>
+						<li>联系客服</li>
+					</ul>
+				</div>
+				<div class="nav">
+					<h5>配送方式</h5>
+					<ul>
+						<li>上门自提</li>
+						<li>211限时达</li>
+						<li>配送服务查询</li>
+						<li>配送费收取标准</li>
+						<li>海外配送</li>
+					</ul>
+				</div>
+				<div class="nav">
+					<h5>支付方式</h5>
+					<ul>
+						<li>货到付款</li>
+						<li>在线支付</li>
+						<li>分期付款</li>
+						<li>邮局汇款</li>
+						<li>公司转账</li>
+					</ul>
+				</div>
+				<div class="nav">
+					<h5>售后服务</h5>
+					<ul>
+						<li>售后政策</li>
+						<li>价格保护</li>
+						<li>退款说明</li>
+						<li>返修/退换货</li>
+						<li>取消订单</li>
+					</ul>
+				</div>
+				<div class="nav">    
+					<h5>特色服务</h5>
+					<ul>
+						<li>夺宝岛</li>
+						<li>DIY装机</li>
+						<li>延保服务</li>
+						<li>京东E卡</li>
+						<li>京东通信</li>
+						<li>京鱼座智能</li>
+					</ul>
+				</div>
+				<div class="nav">
+					<h5>京东自营覆盖区县</h5>
+					<div>
+						<p>京东已向全国2661个区县提供自营配送服务，支持货到付款、POS机刷卡和售后上门服务。</p>
+						<p>查看详情</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="copyright">
+			<div>
+				<p>
+					<a>关于我们</a>
+					<span>|</span>
+					<a>联系我们</a>
+					<span>|</span>
+					<a>联系客服</a>
+					<span>|</span>
+					<a>合作招商</a>
+					<span>|</span>
+					<a>商家帮助</a>
+					<span>|</span>
+					<a>营销中心</a>
+					<span>|</span>
+					<a>手机京东</a>
+					<span>|</span>
+					<a>友情链接</a>
+					<span>|</span>
+					<a>销售联盟</a>
+					<span>|</span>
+					<a>京东社区</a>
+					<span>|</span>
+					<a>风险监测</a>
+					<span>|</span>
+					<a>隐私政策</a>
+					<span>|</span>
+					<a>京东公益</a>
+					<span>|</span>
+					<a>English Site</a>
+					<span>|</span>
+					<a>Media &amp; IR</a>
+				</p>
+				<div class="info">
+					<div>
+						<p>
+							<a>京公网安备 11000002000088号</a>
+							<span>|</span>
+							<a>京ICP证070359号</a>
+							<span>|</span>
+							<a>互联网药品信息服务资格证编号(京)-经营性-2014-0008</a>
+							<span>|</span>
+							<a>新出发京零 字第大120007号</a>
+						</p>
+						<p>
+							<a>互联网出版许可证编号新出网证(京)字150号</a>
+							<span>|</span>
+							<a>出版物经营许可证</a>
+							<span>|</span>
+							<a>网络文化经营许可证京网文[2014]2148-348号</a>
+							<span>|</span>
+							<a>违法和不良信息举报电话：4006561155</a>
+						</p>
+						<p>
+							<a>Copyright © 2004 - 2019  京东JD.com 版权所有</a>
+							<span>|</span>
+							<a>消费者维权热线：4006067733</a>
+							<span>|</span>
+							<a>经营证照</a>
+							<span>|</span>
+							<a>(京)网械平台备字(2018)第00003号</a>
+							<span>|</span>
+							<a>营业执照</a>
+						</p>
+					</div>
+					<div>
+						<p>
+							<a><i></i>Global Site</a>
+							<span>|</span>
+							<a><i></i>Сайт России</a>
+							<span>|</span>
+							<a><i></i>Situs Indonesia</a>
+							<span>|</span>
+							<a><i></i>Sitio de España</a>
+							<span>|</span>
+							<a><i></i>เว็บไซต์ประเทศไทย</a>
+						</p>
+					</div>
+					<div>
+						<p>
+							<span style="color: #999">京东旗下网站：</span>
+							<a>京东钱包</a>
+							<span style="margin: 0 10px">|</span>
+							<a>京东云</a>
+						</p>
+					</div>
+				</div>
+				<p class="auth">
+					<a></a>
+					<a></a>
+					<a></a>
+					<a></a>
+					<a></a>
+				</p>
+			</div>
+		</div>
+	</footer>
+	<script src="../swiper-4.5.0/dist/js/swiper.min.js"></script>
+	<script src="../js/lunbo.js"></script>
+	<script>
+		
+	</script>
+	<script src="../js/main.js"></script>
+</body>
+</html>
